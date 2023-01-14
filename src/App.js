@@ -1,9 +1,21 @@
-import Home from "./Pages/Home/Home";
+import Home from './Pages/Home/Home';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
 
-function App() {
+} from "react-router-dom";
+import Field from './Pages/Field/Field';
+
+function App () {
   return (
-   <Home />
-  );
+    <BrowserRouter>
+    <Routes>
+    <Route path= "/" element= {<Home />} />
+    <Route path = "/field" element= { <Field />} />
+    </Routes>
+    </BrowserRouter>
+  )
 }
 
-export default App;
+export default App
