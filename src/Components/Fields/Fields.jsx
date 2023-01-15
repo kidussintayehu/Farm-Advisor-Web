@@ -14,7 +14,9 @@ function Fields (props) {
               </div>
             </div>
           </div>
+          <a href='/field' >
           <ArrowForwardIosOutlinedIcon />
+          </a>
         </div>
         <br />
         <p className='text-gray-700 text-base mb-4'> {props.message}</p>
