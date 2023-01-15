@@ -62,7 +62,7 @@ export default function CardBarChart() {
               display: false,
               scaleLabel: {
                 display: true,
-                labelString: "Month",
+                labelString: "Week",
               },
               gridLines: {
                 borderDash: [2],
@@ -100,7 +100,7 @@ export default function CardBarChart() {
   }, []);
   return (
     <>
-      <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded">
+      <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 rounded">
         <div className="rounded-t mb-0 px-4 py-3 bg-transparent">
           <div className="flex flex-wrap items-center">
             <div className="relative w-full max-w-full flex-grow flex-1">
