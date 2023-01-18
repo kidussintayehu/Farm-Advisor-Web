@@ -5,11 +5,11 @@ function Fields (props) {
     <div className='my-5'>
       <div className=' flex flex-col p-6 rounded-lg shadow-md bg-white w-full'>
         <div className='justify-between md:items-center md:flex '>
-          <div class='flex items-center space-x-4'>
-            <img class='w-10 h-10 rounded-full' src={farmland} alt='farm' />
-            <div class='font-medium dark:text-white'>
+          <div className='flex items-center space-x-4'>
+            <img className='w-10 h-10 rounded-full' src={farmland} alt='farm' />
+            <div className='font-medium dark:text-white'>
               <div>{props.fieldName}</div>
-              <div class='text-sm text-gray-500 dark:text-gray-400'>
+              <div className='text-sm text-gray-500 dark:text-gray-400'>
                 {props.value}
               </div>
             </div>
