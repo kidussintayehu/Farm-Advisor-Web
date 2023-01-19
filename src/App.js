@@ -9,6 +9,7 @@ import Field from './Pages/Field/Field';
 import Welcome from './Pages/Welcome/Welcome';
 import Addfield from './Pages/Addfield/Addfield';
 import Newfarm from './Pages/Newfarm/Newfarm';
+import AddSensor from './Pages/AddSensor/AddSensor';
 
 
 function App () {
@@ -19,6 +20,7 @@ function App () {
        <Route path = "/field" element= { <Field />} />
        <Route path = "/welcome" element= { <Welcome />} />
        <Route path = "/addfield" element= { <Addfield />} />
+       <Route path = "/addsensor" element= { <AddSensor />} />
        <Route path = "/newfarm" element= { <Newfarm />} />
       </Routes>
     </BrowserRouter>
