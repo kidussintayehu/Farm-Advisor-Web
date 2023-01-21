@@ -1,16 +1,16 @@
 import NavBar from "../../Components/Navbar/Navbar";
-import NavBar2 from "../../Components/Navbar/NavBar2/NavBar2";
 import TerrainIcon from "@mui/icons-material/Terrain";
 import CardLineChart from "../../Components/Chart/CardLineChart";
 import CardBarChart from "../../Components/Chart/CardBarChart";
 import Card from "../../Components/Card/Card";
 import Title from "../../Components/Title/Title";
 import Warning from "../../Components/Warning/Warning";
+import Bar from "../../Components/Navbar/Bar/Bar";
 const Field = () => {
   return (
     <div>
       <NavBar />
-      <NavBar2 />
+      <Bar />
       <div className="md:container md:mx-auto bg-slate-50 h-screen pt-6">
         <div className="justify-between md:items-center md:flex mb-8 ">
           <div class="flex items-center space-x-4">
