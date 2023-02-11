@@ -8,15 +8,13 @@ import MoreOptionMenu from "../../Components/Menu/MoreOptionMenu";
 import DropDown from "../../Components/Menu/DropDown";
 const Home = () => {
   return (
-    <div>
+    <div className="w-full">
       <Navbar />
-
       <div class="md:container md:mx-auto bg-slate-50 h-screen pt-6">
         <div className="justify-between md:items-center md:flex mb-8 ">
           <div class="flex items-center space-x-4">
             <img
               class="w-10 h-10 rounded-full"
-
               src={ethiopianfarm}
               alt="farm"
             />
