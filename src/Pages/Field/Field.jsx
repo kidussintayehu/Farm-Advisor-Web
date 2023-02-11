@@ -13,7 +13,7 @@ const Field = () => {
       <Bar />
       <div className="md:container md:mx-auto bg-slate-50 h-screen pt-6">
         <div className="justify-between md:items-center md:flex mb-8 ">
-          <div class="flex items-center space-x-4">
+          <div className="flex items-center space-x-4">
             <TerrainIcon />
             <p className="text-gray-700 text-base ">127m above see level.</p>
           </div>
