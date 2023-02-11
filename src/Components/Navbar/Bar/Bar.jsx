@@ -1,7 +1,7 @@
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos'
 import MoreVertOutlinedIcon from '@mui/icons-material/MoreVertOutlined'
 
-export default function NavBar2 () {
+export default function Bar () {
   return (
     <nav className='w-full justify-center bg-slate-50 shadow'>
       <div className='justify-between md:items-center md:flex px-8'>
