@@ -12,7 +12,7 @@ const Field = () => {
   return (
     <div className="w-full ">
       <NavBar />
-      <Bar />
+      <Bar name = "Farm Name"/>
       <div className=" max-h-full md:container md:mx-auto bg-slate-50 pt-6">
         <div className="justify-between md:items-center md:flex mb-8 ">
           <div className="flex items-center space-x-4">
