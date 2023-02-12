@@ -1,7 +1,7 @@
 import React from "react";
 import Chart from "chart.js";
 
-export default function CardLineChart() {
+export default function WindChart() {
   React.useEffect(() => {
     var config = {
       type: "line",
@@ -18,8 +18,8 @@ export default function CardLineChart() {
         datasets: [
           {
             label: "Temprature (c)",
-            backgroundColor: "#f5425d",
-            borderColor: "#f5425d",
+            backgroundColor: "#c7b750",
+            borderColor: "#c7b750",
             data: [65, 78, 66, 44, 56, 67, 75],
             fill: false,
           },
@@ -100,12 +100,12 @@ export default function CardLineChart() {
         },
       },
     };
-    var ctx = document.getElementById("line-chart").getContext("2d");
+    var ctx = document.getElementById("line-chart-2").getContext("2d");
     window.myLine = new Chart(ctx, config);
   }, []);
   return (
     <>
-      <div className="relative flex flex-col min-w-0 break-words w-full  mb-6 bg-white rounded bg-blueGray-700">
+      <div className="relative flex flex-col min-w-0 break-words w-full mb-6 bg-white rounded bg-blueGray-700">
         <div className="rounded-t mb-0 px-4 py-3 bg-transparent">
           <div className="flex flex-wrap items-center">
             <div className="relative w-full max-w-full flex-grow flex-1">
@@ -119,7 +119,7 @@ export default function CardLineChart() {
         <div className="p-4 flex-auto">
           {/* Chart */}
           <div className="relative h-350-px">
-            <canvas id="line-chart"></canvas>
+            <canvas id="line-chart-2"></canvas>
           </div>
         </div>
       </div>

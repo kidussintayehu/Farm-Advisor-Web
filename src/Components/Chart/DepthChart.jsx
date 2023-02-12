@@ -1,19 +1,19 @@
 import React from "react";
 import Chart from "chart.js";
 
-export default function CardBarChart() {
+export default function DepthChart() {
   React.useEffect(() => {
     let config = {
       type: "bar",
       data: {
         labels: [
-          "Monday - Today ",
-          "Tuesday - May 1",
-          "wednesda - May 10",
-          "Thursday - May  20",
-          "Friday - May 30",
-          "Saturday - June 10",
-          "Sunday - June 20",
+            "Monday - Today ",
+            "Tuesday - May 1",
+            "wednesda - May 10",
+            "Thursday - May  20",
+            "Friday - May 30",
+            "Saturday - June 10",
+            "Sunday - June 20",
         ],
         datasets: [
           // {
@@ -25,10 +25,10 @@ export default function CardBarChart() {
           //   barThickness: 50,
           // },
           {
-            label: "Measured Preciptation (mm)",
+            label: "Snow Depth (cm)",
             fill: false,
-            backgroundColor: "#4287f5",
-            borderColor: "#4287f5",
+            backgroundColor: "#1e0278",
+            borderColor: "#1e0278",
             data: [27, 68, 86, 74, 10, 4, 87],
             barThickness: 50,
           },
@@ -92,12 +92,12 @@ export default function CardBarChart() {
         },
       },
     };
-    let ctx = document.getElementById("bar-chart").getContext("2d");
+    let ctx = document.getElementById("bar-chart-2").getContext("2d");
     window.myBar = new Chart(ctx, config);
   }, []);
   return (
     <>
-      <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 rounded ">
+      <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 rounded">
         {/* <div className="rounded-t mb-0 px-4 py-3 bg-transparent">
           <div className="flex flex-wrap items-center">
             <div className="relative w-full max-w-full flex-grow flex-1">
@@ -112,8 +112,8 @@ export default function CardBarChart() {
         </div> */} 
         <div className="p-4 flex-auto">
           {/* Chart */}
-          <div className="relative h-750-px">
-            <canvas id="bar-chart"></canvas>
+          <div className="relative h-450-px">
+            <canvas id="bar-chart-2"></canvas>
           </div>
         </div>
       </div>
