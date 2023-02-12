@@ -1,15 +1,15 @@
 import { Menu, Transition } from "@headlessui/react";
 import { Fragment } from "react";
-// import { ChevronDownIcon } from "@heroicons/react/20/solid";
-import AddIcon from "@mui/icons-material/Add";
+import PersonIcon from '@mui/icons-material/Person'
 
-export default function AddOptionMenu() {
+
+export default function ProfileOptionMenu() {
   return (
     // <div className="fixed top-16 w-56 text-right">
     <Menu as="div" className="relative inline-block text-left">
       <div>
-        <Menu.Button className="text-white">
-          <AddIcon />
+        <Menu.Button className='text-white'>
+        <PersonIcon />
         </Menu.Button>
       </div>
       <Transition
@@ -30,33 +30,31 @@ export default function AddOptionMenu() {
                     active ? "bg-green-900 text-white" : "text-gray-900"
                   } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                 >
-                  Add New Sensor
+                  Profile
                 </button>
               )}
             </Menu.Item>
 
             <Menu.Item>
               {({ active }) => (
-                <a
-                  href="/addfield"
+                <button
                   className={`${
                     active ? "bg-green-900 text-white" : "text-gray-900"
                   } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                 >
-                  Add New Field
-                </a>
+                  Help
+                </button>
               )}
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <a
-                  href="/addfarm"
+                <button
                   className={`${
                     active ? "bg-green-900 text-white" : "text-gray-900"
                   } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                 >
-                  Add New Farm
-                </a>
+                  Sign out
+                </button>
               )}
             </Menu.Item>
           </div>

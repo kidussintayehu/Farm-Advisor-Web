@@ -1,15 +1,14 @@
 import { Menu, Transition } from "@headlessui/react";
 import { Fragment } from "react";
-// import { ChevronDownIcon } from "@heroicons/react/20/solid";
-import AddIcon from "@mui/icons-material/Add";
+import MoreVertOutlinedIcon from '@mui/icons-material/MoreVertOutlined'
 
-export default function AddOptionMenu() {
+export default function MoreOptionMenu() {
   return (
     // <div className="fixed top-16 w-56 text-right">
     <Menu as="div" className="relative inline-block text-left">
       <div>
-        <Menu.Button className="text-white">
-          <AddIcon />
+        <Menu.Button className="inline-flex w-full justify-center rounded-md bg-white bg-opacity-20 px-4 py-2 text-sm font-medium text-black hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
+        <MoreVertOutlinedIcon />
         </Menu.Button>
       </div>
       <Transition
@@ -30,33 +29,21 @@ export default function AddOptionMenu() {
                     active ? "bg-green-900 text-white" : "text-gray-900"
                   } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                 >
-                  Add New Sensor
+                  Edit Farm
                 </button>
               )}
+              
             </Menu.Item>
 
             <Menu.Item>
               {({ active }) => (
-                <a
-                  href="/addfield"
+                <button
                   className={`${
                     active ? "bg-green-900 text-white" : "text-gray-900"
                   } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                 >
-                  Add New Field
-                </a>
-              )}
-            </Menu.Item>
-            <Menu.Item>
-              {({ active }) => (
-                <a
-                  href="/addfarm"
-                  className={`${
-                    active ? "bg-green-900 text-white" : "text-gray-900"
-                  } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
-                >
-                  Add New Farm
-                </a>
+                  Delete Farm
+                </button>
               )}
             </Menu.Item>
           </div>
