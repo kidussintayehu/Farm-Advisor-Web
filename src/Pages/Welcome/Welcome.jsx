@@ -39,8 +39,8 @@ return (
                 CREATE MY FIRST FARM
           </button>
          {showModal ? (
-  <div class = " absolute justify-center items-center">
-    <div class = 'container md:w-[30rem] rounded-lg shadow-2xl  bg-slate-50 '>
+  <div class = " absolute justify-center items-center pt-[4.9rem]">
+    <div class = 'container md:w-[30rem]  rounded-lg shadow-2xl  bg-slate-50 '>
       <div class = 'flex md:justify-between pt-4'>
        <h2 class = "text-2xl font-bold">New Farm</h2>
        <button onClick={() => setShowModal(false)}><ClearIcon />
