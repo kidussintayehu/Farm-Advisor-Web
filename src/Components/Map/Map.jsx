@@ -41,8 +41,7 @@ export default function MapBox( {onChange, value} ) {
       </div>
       <div
         ref={mapContainer}
-        className="h-64 w-full rrounded-lg m-4
-"
+        className="h-64 w-full rrounded-lg m-4"
       />
     </div>
   );

@@ -7,6 +7,8 @@ import Help from "./Pages/Help/Help";
 import MapBox from "./Components/Map/Map";
 import FieldForm from "./Pages/AddNewField/AddNewField";
 import FarmForm from "./Pages/AddNewFarm/AddNewFarm";
+import AddFirstSensor from "./Pages/AddFirstSensor/AddNewSensor";
+import SensorForm from "./Pages/AddNewSensor/AddNewSensor";
 function App() {
   return (
     <BrowserRouter>
@@ -16,9 +18,11 @@ function App() {
         <Route path="/addfarm" element={<AddFirstFarm />} />
         <Route path="/addfield" element={<Addfield />} />
         <Route path="/fieldform" element= {<FieldForm />} />
+        <Route path="/sensorform" element= {<SensorForm />} />
         <Route path="/farmform" element= {<FarmForm />} />
         <Route path="/help" element={<Help />} />
         <Route path="/map" element={<MapBox />} />
+        <Route path="/addsensor" element={<AddFirstSensor />} />
       </Routes>
     </BrowserRouter>
   );
