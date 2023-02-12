@@ -49,13 +49,14 @@ export default function AddOptionMenu() {
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <button
+                <a
+                  href="/addfarm"
                   className={`${
                     active ? "bg-green-900 text-white" : "text-gray-900"
                   } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                 >
                   Add New Farm
-                </button>
+                </a>
               )}
             </Menu.Item>
           </div>

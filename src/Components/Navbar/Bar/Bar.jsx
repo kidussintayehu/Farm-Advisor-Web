@@ -4,7 +4,7 @@ import MoreVertOutlinedIcon from '@mui/icons-material/MoreVertOutlined'
 export default function Bar (props) {
   return (
     <nav className='w-full  bg-slate-50 shadow'>
-      <div className='justify-between md:items-center md:flex px-8'>
+      <div className='flex justify-around  md:flex px-8'>
         <div className='flex flex-row items-center justify-between md:py-3 ' >
           <a href='/'>
             <ArrowBackIosIcon />
