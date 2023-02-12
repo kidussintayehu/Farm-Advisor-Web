@@ -25,13 +25,14 @@ export default function AddOptionMenu() {
           <div className="px-1 py-1 ">
             <Menu.Item>
               {({ active }) => (
-                <button
+                <a
+                href="/addsensor"
                   className={`${
                     active ? "bg-green-900 text-white" : "text-gray-900"
                   } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                 >
                   Add New Sensor
-                </button>
+                </a>
               )}
             </Menu.Item>
 
