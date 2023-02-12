@@ -11,9 +11,7 @@ function Results (data) {
                <PlaceIcon /> 
           </div>
           <div class = "flex flex-col ml-6 ">
-           <button class = 'text-gray-700 text-left font-bold'>
              {data.name}
-           </button>
            <p class = 'text-gray-700 text-sm'>
              {data.address}
            </p> 
