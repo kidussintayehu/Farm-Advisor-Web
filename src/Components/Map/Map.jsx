@@ -4,13 +4,13 @@ import mapboxgl from "!mapbox-gl"; // eslint-disable-line import/no-webpack-load
 mapboxgl.accessToken =
   "pk.eyJ1Ijoic2FpbnQxMiIsImEiOiJjbGUxMHRlZ3AxZ3JsM3ByeDh1ZWNraHhrIn0.e6WS7pslf0wlma3BZzk_yg";
 
-export default function MapBox() {
+export default function MapBox( {onChange, value} ) {
   const mapContainer = useRef(null);
   const map = useRef(null);
   const [lng, setLng] = useState(38.763611);
   const [lat, setLat] = useState(9.005401);
   const [zoom, setZoom] = useState(9);
-
+  // const [value, setValue] = useState({lat, lng})
   useEffect(() => {
     if (map.current) return; // initialize map only once
     map.current = new mapboxgl.Map({
@@ -33,7 +33,11 @@ export default function MapBox() {
   return (
     <div className="flex flex-col">
       <div className="bg-white text-black relative left-0 m-3 p-2  rounded z-10 ">
+        {/* <input > */}
+        <p value={value} onChange={onChange}>
         Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
+        {/* </input> */}
+        </p>
       </div>
       <div
         ref={mapContainer}
