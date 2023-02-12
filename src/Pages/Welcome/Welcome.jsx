@@ -11,6 +11,7 @@ import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 const Welcome = () => {
 const [showModal, setShowModal] = useState(false);
 const [search,setSearch] = useState("")
+const [location,setLocation] = useState("")
 
 const handleClick = () =>{
   data.filter((val)=>{
@@ -58,6 +59,8 @@ return (
          </div>
        </form>
         <h5 class = "text-sm  text-gray-600 mb-2 mt-2">Location</h5>
+
+         
         <div class="container rounded-lg shadow-md  bg-white divide-y md:divide-solid mb-10">
         <div class = "flex flex-row justify-between  mb-4 rounded">
            <input type="search" class="form-control   font-normal text-gray-700 pt-10
