@@ -1,3 +1,4 @@
+// import{Outlet} from 'react-router-dom'
 import Alerts from "../../Components/Alerts/Alerts";
 import Fields from "../../Components/Fields/Fields";
 import Navbar from "../../Components/Navbar/Navbar";
@@ -55,6 +56,7 @@ const Home = () => {
           message="Your Optimal Cutting Period is in 3 days"
         />
       </div>
+      {/* <Outlet/> */}
     </div>
   );
 };

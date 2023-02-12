@@ -1,0 +1,12 @@
+.sign-up-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 100%px;
+
+  
+  }
+ .sign-up-container h2 {
+    margin: 25px 0;
+  }
