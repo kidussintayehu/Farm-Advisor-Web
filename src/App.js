@@ -8,7 +8,7 @@ import {
 import Field from './Pages/Field/Field';
 import Welcome from './Pages/Welcome/Welcome';
 import Addfield from './Pages/Addfield/Addfield';
-import Newfarm from './Pages/Newfarm/Newfarm';
+import Profile from './Pages/Profile/Profile';
 
 
 function App () {
@@ -19,6 +19,8 @@ function App () {
        <Route path = "/field" element= { <Field />} />
        <Route path = "/welcome" element= { <Welcome />} />
        <Route path = "/addfield" element= { <Addfield />} />
+       <Route path = "/myprofile" element= { <Profile />} />
+
       </Routes>
     </BrowserRouter>
   )

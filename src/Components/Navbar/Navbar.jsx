@@ -1,5 +1,7 @@
 import AddIcon from '@mui/icons-material/Add'
 import PersonIcon from '@mui/icons-material/Person'
+import { Tooltip } from '@mui/material';
+
 
 export default function NavBar () {
   return (
@@ -16,8 +18,10 @@ export default function NavBar () {
           <a href='/' className='text-white'>
             <AddIcon />
           </a>
-          <a href='/' className='text-white'>
-            <PersonIcon />
+          <a href='/myprofile' className='text-white'>
+            <Tooltip title = "Myprofile">
+               <PersonIcon />
+            </Tooltip>
           </a>
         </div>
       </div>
