@@ -19,7 +19,6 @@ function App () {
        <Route path = "/field" element= { <Field />} />
        <Route path = "/welcome" element= { <Welcome />} />
        <Route path = "/addfield" element= { <Addfield />} />
-       <Route path = "/newfarm" element= { <Newfarm />} />
       </Routes>
     </BrowserRouter>
   )
