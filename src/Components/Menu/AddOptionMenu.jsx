@@ -1,8 +1,8 @@
 import { Menu, Transition } from "@headlessui/react";
 import { Fragment } from "react";
 import AddIcon from "@mui/icons-material/Add";
-import {Link} from "react-router-dom";
 
+import {Link} from "react-router-dom";
 
 export default function AddOptionMenu() {
   return (
@@ -21,11 +21,12 @@ export default function AddOptionMenu() {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <Menu.Items className="absolute right-0 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+        <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
           <div className="px-1 py-1 ">
             <Menu.Item>
               {({ active }) => (
                 <Link
+
                 to="/addsensor"
                   className={`${
                     active ? "bg-green-900 text-white" : "text-gray-900"
