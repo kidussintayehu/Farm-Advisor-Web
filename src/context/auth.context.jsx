@@ -7,6 +7,8 @@ const AuthContext = createContext(null)
 
 export const AuthProvider =({children})=>{
     const [user,setUser]= useState(null)
+    const [isLoading,setLoading] = useState(false)
+
     const navigate = useNavigate()
     
    useEffect(()=>{
@@ -20,6 +22,7 @@ export const AuthProvider =({children})=>{
         setUser(user)
         if (user){
             navigate('/')
+            setLoading(true)
             }
      })
      

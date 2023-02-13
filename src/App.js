@@ -27,7 +27,7 @@ function App() {
     <Route element={<PrivateRoutes/>}>
        <Route path='/' element={<Navigations/>}  >
           <Route index element={<Home/>}/>
-          <Route path="/field" element={<Field />} />
+          <Route path="field" element={<Field />} />
           <Route path="/addfarm" element={<AddFirstFarm />} />
           <Route path="/addfield" element={<Addfield />} />
           <Route path="/fieldform" element={<FieldForm />} />
@@ -35,7 +35,6 @@ function App() {
           <Route path="/farmform" element={<FarmForm />} />
           <Route path="/help" element={<Help />} />
           <Route path="/map" element={<MapBox />} />
-          {/* <Route path="/auth" element={<SignUpPage />} /> */}
           <Route path="/addsensor" element={<AddFirstSensor />} />
           <Route path="/welcome" element={<Welcome />} />
       </Route>

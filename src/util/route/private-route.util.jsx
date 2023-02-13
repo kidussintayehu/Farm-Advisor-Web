@@ -1,4 +1,4 @@
-import {React,useEffect} from 'react'
+import {React,useState} from 'react'
 import {Navigate, Outlet } from 'react-router-dom'
 import { useAuth } from '../../context/auth.context'
 
@@ -8,6 +8,7 @@ const PrivateRoutes = () => {
     
     
   return (
+    
     auth.user ? <Outlet/> : <Navigate to='/auth'/>
 
   )

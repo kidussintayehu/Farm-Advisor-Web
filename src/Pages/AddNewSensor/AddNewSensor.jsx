@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Navigate } from "react-router";
+import {Link} from "react-router-dom";
+
 
 import InputField from "../../Components/InputField.jsx/InputField";
 import Button from "../../Components/Button/ButtonField";
@@ -72,12 +74,12 @@ export default function SensorForm() {
               <p className="font-['Roboto'] font-medium text-2xl not-italic leading-7">
                 New Sensor
               </p>
-              <a
-                href="/addsensor"
+              <Link
+                to="/addsensor"
                 className="bg-transparent border-0 text-black float-right"
               >
                 X
-              </a>
+              </Link>
             </div>
             <form>
               <div className="mb-4 px-3">

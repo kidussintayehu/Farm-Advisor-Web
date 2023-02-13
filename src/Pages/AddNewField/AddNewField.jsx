@@ -3,6 +3,8 @@ import InputField from "../../Components/InputField.jsx/InputField";
 import Button from "../../Components/Button/ButtonField";
 import { Navigate } from "react-router";
 import createField from "../../Api/createField";
+import {Link} from "react-router-dom";
+
 
 export default function FieldForm() {
 
@@ -49,12 +51,12 @@ export default function FieldForm() {
               <p className="font-['Roboto'] font-medium text-2xl not-italic leading-7">
                 New Field
               </p>
-              <a
-                href="/addfield"
+              <Link
+                to="/addfield"
                 className="bg-transparent border-0 text-black float-right"
               >
                 X
-              </a>
+              </Link>
             </div>
             <div>
               <form>

@@ -3,6 +3,8 @@ import land from '../../Assets/Images/land.jpg';
 import ethiopianfarm from '../../Assets/Images/ethiopianfarm.jpg';
 import DropDown from '../../Components/Menu/DropDown';
 import MoreOptionMenu from '../../Components/Menu/MoreOptionMenu';
+import {Link} from "react-router-dom";
+
 
 
 const Firstfield = () => {
@@ -30,11 +32,11 @@ const Firstfield = () => {
           <p class = "text-right md:text-center pt-2 pb-9 w-80">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
              sed do eiusmod tempor. 
               </p>
-          <a 
-          href='/fieldform'
+          <Link 
+          to='/fieldform'
           className = "bg-[#275342] hover:bg-[#14532d] w-80 text-white font-bold py-2 px-12 rounded text-center">
                 ADD MY FIRST FIELD
-          </a>
+          </Link>
        </div> 
        </div>
   </div>
