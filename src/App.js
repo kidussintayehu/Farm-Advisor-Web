@@ -9,6 +9,7 @@ import Field from './Pages/Field/Field';
 import Welcome from './Pages/Welcome/Welcome';
 import Addfield from './Pages/Addfield/Addfield';
 import Profile from './Pages/Profile/Profile';
+import Newfield from './Pages/Newfield/Newfield';
 
 
 function App () {
@@ -20,7 +21,7 @@ function App () {
        <Route path = "/welcome" element= { <Welcome />} />
        <Route path = "/addfield" element= { <Addfield />} />
        <Route path = "/myprofile" element= { <Profile />} />
-
+       <Route path = "/newfield" element= { <Newfield />} />
       </Routes>
     </BrowserRouter>
   )
