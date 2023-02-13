@@ -4,6 +4,7 @@ import Button from "../../Components/Button/ButtonField";
 import { Navigate } from "react-router";
 import MapBox from "../../Components/Map/Map";
 import createFarm from "../../Api/createFarm";
+import {Link} from "react-router-dom";
 export default function FarmForm() {
 
   const [navigate, setNavigate] = useState(false);
@@ -43,12 +44,12 @@ export default function FarmForm() {
               <p className="font-['Roboto'] font-medium text-2xl not-italic leading-7">
                 New Farm
               </p>
-              <a
-                href="/addfield"
+              <Link
+                to="/addfield"
                 className="bg-transparent border-0 text-black float-right"
               >
                 X
-              </a>
+              </Link>
             </div>
             <div>
               <form>

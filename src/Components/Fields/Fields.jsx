@@ -1,3 +1,4 @@
+import {Link} from "react-router-dom" 
 import farmland from '../../Assets/Images/farmland.jpg'
 import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined'
 function Fields (props) {
@@ -14,9 +15,9 @@ function Fields (props) {
               </div>
             </div>
           </div>
-          <a href='/field' >
+          <Link to='/field' >
           <ArrowForwardIosOutlinedIcon />
-          </a>
+          </Link>
         </div>
         <br />
         <p className='text-gray-700 text-base mb-4'> {props.message}</p>

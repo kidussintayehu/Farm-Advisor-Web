@@ -1,5 +1,7 @@
 import Navbar from '../../Components/Navbar/Navbar';
 import farmer from '../../Assets/Images/farmer.jpg';
+import {Link} from "react-router-dom";
+
 
 const AddFirstSensor = () => {
   return (
@@ -15,11 +17,11 @@ const AddFirstSensor = () => {
           <p className = "text-right md:text-center pt-2 pb-9 w-80">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
              sed do eiusmod tempor. 
               </p>
-          <a 
-          href = "/sensorform"
+          <Link 
+          to = "/sensorform"
           className = "bg-[#275342] hover:bg-[#14532d] w-80 text-white font-bold py-2 px-12 rounded">
                 CREATE MY FIRST SENSOR
-          </a>
+          </Link>
        </div> 
        </div>
   </div>

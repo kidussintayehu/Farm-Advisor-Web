@@ -1,7 +1,8 @@
 import { Menu, Transition } from "@headlessui/react";
 import { Fragment } from "react";
 import AddIcon from "@mui/icons-material/Add";
-import { Link } from "react-router-dom";
+
+import {Link} from "react-router-dom";
 
 export default function AddOptionMenu() {
   return (
@@ -25,7 +26,8 @@ export default function AddOptionMenu() {
             <Menu.Item>
               {({ active }) => (
                 <Link
-                href="/addsensor"
+
+                to="/addsensor"
                   className={`${
                     active ? "bg-green-900 text-white" : "text-gray-900"
                   } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
@@ -37,26 +39,26 @@ export default function AddOptionMenu() {
 
             <Menu.Item>
               {({ active }) => (
-                <a
-                  href="/addfield"
+                <Link
+                  to="/addfield"
                   className={`${
                     active ? "bg-green-900 text-white" : "text-gray-900"
                   } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                 >
                   Add New Field
-                </a>
+                </Link>
               )}
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <a
-                  href="/addfarm"
+                <Link
+                  to="/addfarm"
                   className={`${
                     active ? "bg-green-900 text-white" : "text-gray-900"
                   } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                 >
                   Add New Farm
-                </a>
+                </Link>
               )}
             </Menu.Item>
           </div>
