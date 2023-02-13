@@ -23,7 +23,7 @@ export default function SensorForm() {
     setPosition(value);
   };
   const [serial_number, setSerialNumber] = useState("");
-  const [location, setLocation] = useState("");
+  const [location,] = useState("");
   const [GDD, setGDD] = useState(445);
   const [installation_date, setInstallationDate] = useState(date);
   const [last_cutting_date_at_Field, setLastCuttingDateAtField] =
@@ -33,10 +33,7 @@ export default function SensorForm() {
     const { value } = event.target;
     setSerialNumber(value);
   };
-  const handleLocationChange = (event) => {
-    const { value } = event.target;
-    setLocation(value);
-  };
+
   const handleGDDChange = (event) => {
     const { value } = event.target;
     setGDD(value);
