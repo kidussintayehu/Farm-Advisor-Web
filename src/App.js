@@ -9,12 +9,7 @@ import FieldForm from "./Pages/AddNewField/AddNewField";
 import FarmForm from "./Pages/AddNewFarm/AddNewFarm";
 import AddFirstSensor from "./Pages/AddFirstSensor/AddNewSensor";
 import SensorForm from "./Pages/AddNewSensor/AddNewSensor";
-import Welcome from "./Pages/Welcome/Welcome";
-// import Authentication from './Pages/authentication/authentication.component'
 import SignUpPage from "./Pages/authentication/sign-up-page";
-// import PrivateRoutes from './util/route/private-route.util';
-// import Navigations from './Pages/navigation/navigation.component'
-// import { useAuth } from './context/auth.context'
 import SignInForm from "./Components/sign-in-form/sign-in-form.component";
 import SignUpForm from "./Components/sign-up-form/sign-up-form.component";
 function App() {
