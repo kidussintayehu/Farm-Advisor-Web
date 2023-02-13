@@ -13,7 +13,7 @@ import {
   import { getFirestore, doc, getDoc, setDoc } from 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: process.env.FIREBASE_API_KEY,
+  apiKey: "AIzaSyAquTBJzmG7fM5lfCbITTh-SOF4rgKZre4",
   authDomain: "agino-farm-db.firebaseapp.com",
   projectId: "agino-farm-db",
   storageBucket: "agino-farm-db.appspot.com",
