@@ -6,6 +6,7 @@ const PrivateRoutes = () => {
     const auth = useAuth()
     console.log(auth.user)
     
+    
   return (
     auth.user ? <Outlet/> : <Navigate to='/auth'/>
 
