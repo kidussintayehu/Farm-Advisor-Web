@@ -1,10 +1,8 @@
 import "./signUpPage.styles.scss";
-// import Logo from '../../Assets/icons8-open-source-250.png'
 import Logo from "../../Assets/icons8-open-source-150.png";
 import { useNavigate, Link } from "react-router-dom";
 
 import Button from "../../Components/button/button.component";
-// import Button from '../../Components/Button/ButtonField';
 
 const SignUpPage = () => {
   const navigate = useNavigate();
@@ -12,10 +10,7 @@ const SignUpPage = () => {
     <div className="md:container md:mx-auto bg-slate-50 h-screen">
       <div className="h-[36rem] flex flex-col justify-center items-center ">
         <img className="w-28 h-28 rounded-full" src={Logo} alt="logo" />
-        {/* <div className='Roboto text-[34px] pt-5 font-bold text-[#20382F]'> */}
-        {/* <div className='Roboto text-[34px] pt-5 font-bold text-[#20382F]'>Smart Farming</div>
-            <div className="Roboto text-[34px] pt-5 font-bold text-[#20382F]">Lorem ipsum dolor sit amet consectetur adipisicing elit.  Commodi quasi atque itecto sit eos vero corporis numquam, voluptatum consectetur</div> */}
-        {/* </div> */}
+
         <h1 className="Roboto text-[34px] pt-5 font-bold text-[#20382F]">
           Smart Farming
         </h1>

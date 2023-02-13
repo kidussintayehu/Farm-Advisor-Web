@@ -5,7 +5,6 @@ import PersonIcon from '@mui/icons-material/Person'
 
 export default function ProfileOptionMenu() {
   return (
-    // <div className="fixed top-16 w-56 text-right">
     <Menu as="div" className="relative inline-block text-left">
       <div>
         <Menu.Button className='text-white'>

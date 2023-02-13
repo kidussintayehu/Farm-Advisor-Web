@@ -3,7 +3,6 @@ import { Navigate } from "react-router";
 
 import InputField from "../../Components/InputField.jsx/InputField";
 import Button from "../../Components/Button/ButtonField";
-import sensorLocation from "../../Assets/Images/sensorLocation.svg";
 import qr_code_scanner from "../../Assets/Images/qr_code_scanner.svg";
 import gddField from "../../Assets/Images/gddField.svg";
 import createSensor from "../../Api/creatSensor";

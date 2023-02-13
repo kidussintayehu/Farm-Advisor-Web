@@ -6,11 +6,9 @@ import { Link } from "react-router-dom";
 
 import {
   signInWithGooglePopup,
-  createUserDocumentFromAuth,
   signInAuthUserWithEmailAndPassword,
 } from "../../util/firebase/firebase.utils";
 
-// import './sign-in-form.styles.css';
 
 const defaultFormFields = {
   email: "",

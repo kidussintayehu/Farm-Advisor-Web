@@ -1,5 +1,5 @@
 import { render, screen} from '@testing-library/react';
-import Welcome from '../../Pages/Welcome/Welcome';
+import Welcome from '../../../Pages/Welcome/Welcome';
 
 test('renders the greeter correctly', () => {
   render(<Welcome />);
