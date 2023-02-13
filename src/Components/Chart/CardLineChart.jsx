@@ -7,27 +7,27 @@ export default function CardLineChart() {
       type: "line",
       data: {
         labels: [
-          "Monday",
-          "Tuesday",
-          "wednesda",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday",
+          "Monday - Today ",
+          "Tuesday - May 1",
+          "wednesda - May 10",
+          "Thursday - May  20",
+          "Friday - May 30",
+          "Saturday - June 10",
+          "Sunday - June 20",
         ],
         datasets: [
           {
-            label: new Date().getFullYear(),
-            backgroundColor: "#3182ce",
-            borderColor: "#3182ce",
+            label: "Temprature (c)",
+            backgroundColor: "#f5425d",
+            borderColor: "#f5425d",
             data: [65, 78, 66, 44, 56, 67, 75],
             fill: false,
           },
           {
-            label: new Date().getFullYear() - 1,
+            label: "GDD",
             fill: false,
-            backgroundColor: "#ed64a6",
-            borderColor: "#ed64a6",
+            backgroundColor: "#000",
+            borderColor: "#000",
             data: [40, 68, 86, 74, 56, 60, 87],
           },
         ],
@@ -37,34 +37,31 @@ export default function CardLineChart() {
         responsive: true,
         title: {
           display: false,
-          text: "Sales Charts",
+          text: "Temprature Charts",
           fontColor: "black",
         },
         legend: {
           labels: {
             fontColor: "black",
           },
-          align: "end",
+          align: "middle",
           position: "bottom",
         },
         tooltips: {
           mode: "index",
           intersect: false,
         },
-        hover: {
-          mode: "nearest",
-          intersect: true,
-        },
         scales: {
           xAxes: [
             {
-              ticks: {
-                fontColor: "rgba(255,255,255,.7)",
-              },
+              // ticks: {
+              //   fontColor: "rgba(255,255,255,.7)",
+              // },
+              position: "top",
               display: true,
               scaleLabel: {
                 display: false,
-                labelString: "Month",
+                labelString: "Week",
                 fontColor: "black",
               },
               gridLines: {
@@ -80,9 +77,9 @@ export default function CardLineChart() {
           ],
           yAxes: [
             {
-              ticks: {
-                fontColor: "rgba(255,255,255,.7)",
-              },
+              // ticks: {
+              //   fontColor: "rgba(255,255,255,.7)",
+              // },
               display: true,
               scaleLabel: {
                 display: false,
@@ -108,7 +105,7 @@ export default function CardLineChart() {
   }, []);
   return (
     <>
-      <div className="relative flex flex-col min-w-0 break-words w-full mb-6 bg-white rounded bg-blueGray-700">
+      <div className="relative flex flex-col min-w-0 break-words w-full  mb-6 bg-white rounded bg-blueGray-700">
         <div className="rounded-t mb-0 px-4 py-3 bg-transparent">
           <div className="flex flex-wrap items-center">
             <div className="relative w-full max-w-full flex-grow flex-1">

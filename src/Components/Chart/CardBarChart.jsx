@@ -7,30 +7,30 @@ export default function CardBarChart() {
       type: "bar",
       data: {
         labels: [
-            "Monday",
-            "Tuesday",
-            "wednesda",
-            "Thursday",
-            "Friday",
-            "Saturday",
-            "Sunday",
+          "Monday - Today ",
+          "Tuesday - May 1",
+          "wednesda - May 10",
+          "Thursday - May  20",
+          "Friday - May 30",
+          "Saturday - June 10",
+          "Sunday - June 20",
         ],
         datasets: [
+          // {
+          //   label: new Date().getFullYear(),
+          //   backgroundColor: "#6c42f5",
+          //   borderColor: "#6c42f5",
+          //   data: [30, 78, 56, 34, 100, 45, 13],
+          //   fill: false,
+          //   barThickness: 50,
+          // },
           {
-            label: new Date().getFullYear(),
-            backgroundColor: "#ed64a6",
-            borderColor: "#ed64a6",
-            data: [30, 78, 56, 34, 100, 45, 13],
+            label: "Measured Preciptation (mm)",
             fill: false,
-            barThickness: 8,
-          },
-          {
-            label: new Date().getFullYear() - 1,
-            fill: false,
-            backgroundColor: "#3182ce",
-            borderColor: "#3182ce",
+            backgroundColor: "#4287f5",
+            borderColor: "#4287f5",
             data: [27, 68, 86, 74, 10, 4, 87],
-            barThickness: 8,
+            barThickness: 50,
           },
         ],
       },
@@ -39,39 +39,36 @@ export default function CardBarChart() {
         responsive: true,
         title: {
           display: false,
-          text: "Orders Chart",
+          text: "Preciptation Chart",
         },
         tooltips: {
           mode: "index",
           intersect: false,
         },
-        hover: {
-          mode: "nearest",
-          intersect: true,
-        },
         legend: {
           labels: {
             fontColor: "rgba(0,0,0,.4)",
           },
-          align: "end",
+          align: "middle",
           position: "bottom",
         },
         scales: {
           xAxes: [
             {
-              display: false,
+              display: true,
+              position: "top",
               scaleLabel: {
-                display: true,
+                display: false,
                 labelString: "Week",
               },
-              gridLines: {
-                borderDash: [2],
-                borderDashOffset: [2],
-                color: "rgba(33, 37, 41, 0.3)",
-                zeroLineColor: "rgba(33, 37, 41, 0.3)",
-                zeroLineBorderDash: [2],
-                zeroLineBorderDashOffset: [2],
-              },
+              // gridLines: {
+              //   borderDash: [2],
+              //   borderDashOffset: [2],
+              //   color: "rgba(33, 37, 41, 0.3)",
+              //   zeroLineColor: "rgba(33, 37, 41, 0.3)",
+              //   zeroLineBorderDash: [2],
+              //   zeroLineBorderDashOffset: [2],
+              // },
             },
           ],
           yAxes: [
@@ -81,15 +78,15 @@ export default function CardBarChart() {
                 display: false,
                 labelString: "Value",
               },
-              gridLines: {
-                borderDash: [2],
-                drawBorder: false,
-                borderDashOffset: [2],
-                color: "rgba(33, 37, 41, 0.2)",
-                zeroLineColor: "rgba(33, 37, 41, 0.15)",
-                zeroLineBorderDash: [2],
-                zeroLineBorderDashOffset: [2],
-              },
+              // gridLines: {
+              //   borderDash: [2],
+              //   drawBorder: false,
+              //   borderDashOffset: [2],
+              //   color: "rgba(33, 37, 41, 0.2)",
+              //   zeroLineColor: "rgba(33, 37, 41, 0.15)",
+              //   zeroLineBorderDash: [2],
+              //   zeroLineBorderDashOffset: [2],
+              // },
             },
           ],
         },
@@ -100,8 +97,8 @@ export default function CardBarChart() {
   }, []);
   return (
     <>
-      <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 rounded">
-        <div className="rounded-t mb-0 px-4 py-3 bg-transparent">
+      <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 rounded ">
+        {/* <div className="rounded-t mb-0 px-4 py-3 bg-transparent">
           <div className="flex flex-wrap items-center">
             <div className="relative w-full max-w-full flex-grow flex-1">
               {/* <h6 className="uppercase text-blueGray-400 mb-1 text-xs font-semibold">
@@ -110,12 +107,12 @@ export default function CardBarChart() {
               <h2 className="text-blueGray-700 text-xl font-semibold">
                 Total orders
               </h2> */}
-            </div>
+            {/* </div>
           </div>
-        </div>
+        </div> */} 
         <div className="p-4 flex-auto">
           {/* Chart */}
-          <div className="relative h-350-px">
+          <div className="relative h-750-px">
             <canvas id="bar-chart"></canvas>
           </div>
         </div>

@@ -6,7 +6,6 @@ import { signOutUser } from "../../util/firebase/firebase.utils";
 
 export default function ProfileOptionMenu() {
   return (
-    // <div className="fixed top-16 w-56 text-right">
     <Menu as="div" className="relative inline-block text-left">
       <div>
         <Menu.Button className='text-white'>
@@ -38,13 +37,14 @@ export default function ProfileOptionMenu() {
 
             <Menu.Item>
               {({ active }) => (
-                <button
+                <a
+                href = "/help"
                   className={`${
                     active ? "bg-green-900 text-white" : "text-gray-900"
                   } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                 >
                   Help
-                </button>
+                </a>
               )}
             </Menu.Item>
             <Menu.Item>

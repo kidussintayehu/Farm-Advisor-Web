@@ -1,10 +1,10 @@
-import React from 'react'
+import {React,useEffect} from 'react'
 import {Navigate, Outlet } from 'react-router-dom'
 import { useAuth } from '../../context/auth.context'
 
 const PrivateRoutes = () => {
     const auth = useAuth()
-    console.log(auth.user)
+    // console.log(auth.user)
     
     
   return (

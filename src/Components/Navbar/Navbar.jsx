@@ -3,7 +3,7 @@ import ProfileOptionMenu from "../Menu/ProfileOptionMenu";
 
 export default function NavBar() {
   return (
-    <nav className="w-full bg-green-900 shadow">
+    <nav className="w-full bg-emerald-900 shadow">
       <div className="justify-between md:items-center md:flex px-8">
         <div className="flex items-center justify-between py-3 md:py-5 md:block text-green">
           <a href="/">

@@ -1,11 +1,9 @@
 import { Menu, Transition } from "@headlessui/react";
 import { Fragment } from "react";
-// import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import AddIcon from "@mui/icons-material/Add";
 
 export default function AddOptionMenu() {
   return (
-    // <div className="fixed top-16 w-56 text-right">
     <Menu as="div" className="relative inline-block text-left">
       <div>
         <Menu.Button className="text-white">
@@ -25,13 +23,14 @@ export default function AddOptionMenu() {
           <div className="px-1 py-1 ">
             <Menu.Item>
               {({ active }) => (
-                <button
+                <a
+                href="/addsensor"
                   className={`${
                     active ? "bg-green-900 text-white" : "text-gray-900"
                   } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                 >
                   Add New Sensor
-                </button>
+                </a>
               )}
             </Menu.Item>
 
@@ -49,13 +48,14 @@ export default function AddOptionMenu() {
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <button
+                <a
+                  href="/addfarm"
                   className={`${
                     active ? "bg-green-900 text-white" : "text-gray-900"
                   } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                 >
                   Add New Farm
-                </button>
+                </a>
               )}
             </Menu.Item>
           </div>
