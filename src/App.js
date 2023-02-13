@@ -16,7 +16,7 @@ import FieldForm from "./Pages/AddNewField/AddNewField";
 import FarmForm from "./Pages/AddNewFarm/AddNewFarm";
 import AddFirstSensor from "./Pages/AddFirstSensor/AddNewSensor";
 import SensorForm from "./Pages/AddNewSensor/AddNewSensor";
-import SignUpPage from "./Pages/authentication/sign-up-page";
+import SignUpPage from "./Pages/Authentication/sign-up-page";
 import SignInForm from "./Components/sign-in-form/sign-in-form.component";
 import SignUpForm from "./Components/sign-up-form/sign-up-form.component";
 

@@ -1,6 +1,7 @@
 import { Menu, Transition } from "@headlessui/react";
 import { Fragment } from "react";
 import AddIcon from "@mui/icons-material/Add";
+import { Link } from "react-router-dom";
 
 export default function AddOptionMenu() {
   return (
@@ -23,14 +24,14 @@ export default function AddOptionMenu() {
           <div className="px-1 py-1 ">
             <Menu.Item>
               {({ active }) => (
-                <a
+                <Link
                 href="/addsensor"
                   className={`${
                     active ? "bg-green-900 text-white" : "text-gray-900"
                   } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                 >
                   Add New Sensor
-                </a>
+                </Link>
               )}
             </Menu.Item>
 
