@@ -1,6 +1,7 @@
 import { Menu, Transition } from "@headlessui/react";
 import { Fragment } from "react";
 import PersonIcon from '@mui/icons-material/Person'
+import { signOutUser } from "../../util/firebase/firebase.utils";
 
 
 export default function ProfileOptionMenu() {
@@ -48,7 +49,7 @@ export default function ProfileOptionMenu() {
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <button
+                <button onClick={signOutUser}
                   className={`${
                     active ? "bg-green-900 text-white" : "text-gray-900"
                   } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
