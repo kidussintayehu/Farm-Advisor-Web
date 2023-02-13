@@ -1,11 +1,13 @@
 import { useState } from "react";
-
-import FormInput from "../form-input/form-input.component";
-import Button from "../button/button.component";
 import { Link } from "react-router-dom";
+
+
+import FormInput from '../form-input/form-input.component';
+import Button from '../Button/button.component';
 
 import {
   signInWithGooglePopup,
+  // createUserDocumentFromAuth,
   signInAuthUserWithEmailAndPassword,
 } from "../../util/firebase/firebase.utils";
 
@@ -31,8 +33,13 @@ const SignInForm = () => {
     event.preventDefault();
 
     try {
-      const user = await signInAuthUserWithEmailAndPassword(email, password);
-
+      // const user =
+       await signInAuthUserWithEmailAndPassword(
+        email,
+        password
+      );
+    
+      
       resetFormFields();
       // handleRedirect(user)
     } catch (error) {

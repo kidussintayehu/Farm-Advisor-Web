@@ -52,6 +52,8 @@ const Home = () => {
           message="Your Optimal Cutting Period is in 3 days"
         />
       </div>
+      {/* <Outlet/> */}
+      
     </div>
   );
 };
