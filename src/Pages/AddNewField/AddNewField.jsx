@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import InputField from "../../Components/InputField.jsx/InputField";
 import Button from "../../Components/Button/ButtonField";
-// import {create} from '../../../api/farm.api'
 import { Navigate } from "react-router";
 import createField from "../../Api/createField";
+import {Link} from "react-router-dom";
+
 
 export default function FieldForm() {
-  const [showModal, setShowModal] = useState(false);
 
   const [navigate, setNavigate] = useState(false);
   const toogleNavigate = () => {
@@ -46,18 +46,17 @@ export default function FieldForm() {
     <>
       <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
         <div className="relative w-auto my-6 mx-auto max-w-3xl">
-          {/*content*/}
           <div className="border-0 h-fit rounded-lg shadow-lg relative flex flex-col w-full lg:min-w-[450px] sm:mx-4 sm:min-w-full bg-gray-50 outline-none focus:outline-none">
             <div className="flex justify-between my-4 px-3">
               <p className="font-['Roboto'] font-medium text-2xl not-italic leading-7">
                 New Field
               </p>
-              <a
-                href="/addfield"
+              <Link
+                to="/addfield"
                 className="bg-transparent border-0 text-black float-right"
               >
                 X
-              </a>
+              </Link>
             </div>
             <div>
               <form>

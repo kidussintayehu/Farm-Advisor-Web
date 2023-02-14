@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { Navigate } from "react-router";
+import {Link} from "react-router-dom";
+
 
 import InputField from "../../Components/InputField.jsx/InputField";
 import Button from "../../Components/Button/ButtonField";
-import sensorLocation from "../../Assets/Images/sensorLocation.svg";
 import qr_code_scanner from "../../Assets/Images/qr_code_scanner.svg";
 import gddField from "../../Assets/Images/gddField.svg";
 import createSensor from "../../Api/creatSensor";
@@ -22,7 +23,7 @@ export default function SensorForm() {
     setPosition(value);
   };
   const [serial_number, setSerialNumber] = useState("");
-  const [location, setLocation] = useState("");
+  const [location,] = useState("");
   const [GDD, setGDD] = useState(445);
   const [installation_date, setInstallationDate] = useState(date);
   const [last_cutting_date_at_Field, setLastCuttingDateAtField] =
@@ -32,10 +33,7 @@ export default function SensorForm() {
     const { value } = event.target;
     setSerialNumber(value);
   };
-  const handleLocationChange = (event) => {
-    const { value } = event.target;
-    setLocation(value);
-  };
+
   const handleGDDChange = (event) => {
     const { value } = event.target;
     setGDD(value);
@@ -73,12 +71,12 @@ export default function SensorForm() {
               <p className="font-['Roboto'] font-medium text-2xl not-italic leading-7">
                 New Sensor
               </p>
-              <a
-                href="/addsensor"
+              <Link
+                to="/addsensor"
                 className="bg-transparent border-0 text-black float-right"
               >
                 X
-              </a>
+              </Link>
             </div>
             <form>
               <div className="mb-4 px-3">

@@ -1,16 +1,18 @@
 import { useState } from "react";
-
-import FormInput from "../form-input/form-input.component";
-import Button from "../button/button.component";
 import { Link } from "react-router-dom";
+
+
+import FormInput from '../form-input/form-input.component';
+import Button from '../Button/button.component';
+
+import { act } from 'react-dom/test-utils';
 
 import {
   signInWithGooglePopup,
-  createUserDocumentFromAuth,
+  // createUserDocumentFromAuth,
   signInAuthUserWithEmailAndPassword,
 } from "../../util/firebase/firebase.utils";
 
-// import './sign-in-form.styles.css';
 
 const defaultFormFields = {
   email: "",
@@ -21,8 +23,8 @@ const SignInForm = () => {
   const [formFields, setFormFields] = useState(defaultFormFields);
   const { email, password } = formFields;
 
-  const resetFormFields = () => {
-    setFormFields(defaultFormFields);
+  const resetFormFields = () => {act(()=>{
+    setFormFields(defaultFormFields);})
   };
 
   const signInWithGoogle = async () => {
@@ -33,8 +35,13 @@ const SignInForm = () => {
     event.preventDefault();
 
     try {
-      const user = await signInAuthUserWithEmailAndPassword(email, password);
-
+      // const user =
+       await signInAuthUserWithEmailAndPassword(
+        email,
+        password
+      );
+    
+      
       resetFormFields();
       // handleRedirect(user)
     } catch (error) {
@@ -71,9 +78,9 @@ const SignInForm = () => {
           <span className="Roboto text-[34px] pt-5 font-bold text-[#20382F]">
             Sign in with your email and password
           </span>
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit} data-testid="sign-in-form">
             <FormInput
-              label="Email"
+              label="email"
               type="email"
               required
               onChange={handleChange}

@@ -1,5 +1,6 @@
 import Navbar from '../../Components/Navbar/Navbar';
 import farmer from '../../Assets/Images/farmer.jpg';
+import {Link} from "react-router-dom"
 
 const AddFirstFarm = () => {
   return (
@@ -15,11 +16,10 @@ const AddFirstFarm = () => {
           <p className = "text-right md:text-center pt-2 pb-9 w-80">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
              sed do eiusmod tempor. 
               </p>
-          <a 
-          href = "/farmform"
+          <Link to ="/farmform"
           className = "bg-[#275342] hover:bg-[#14532d] w-80 text-white font-bold py-2 px-12 rounded">
                 CREATE MY FIRST FARM
-          </a>
+          </Link>
        </div> 
        </div>
   </div>

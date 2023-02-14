@@ -1,10 +1,8 @@
-// import{Outlet} from 'react-router-dom'
 import Alerts from "../../Components/Alerts/Alerts";
 import Fields from "../../Components/Fields/Fields";
 import Navbar from "../../Components/Navbar/Navbar";
 import AddIcon from "@mui/icons-material/Add";
 import ethiopianfarm from "../../Assets/Images/ethiopianfarm.jpg";
-// import ExpandMoreOutlinedIcon from '@mui/icons-material/ExpandMoreOutlined'
 import MoreOptionMenu from "../../Components/Menu/MoreOptionMenu";
 import DropDown from "../../Components/Menu/DropDown";
 const Home = () => {
@@ -55,6 +53,7 @@ const Home = () => {
         />
       </div>
       {/* <Outlet/> */}
+      
     </div>
   );
 };
