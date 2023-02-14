@@ -1,7 +1,6 @@
 import {
   Routes,
   Route,
-  
 } from "react-router-dom";
 import Home from './Pages/Home/Home';
 import Welcome from './Pages/Welcome/Welcome';
@@ -42,7 +41,6 @@ function App() {
       <Route path='/auth' element={<SignUpPage/>}/>
       <Route path='/login' element={<SignInForm/>}/>
       <Route path='/signUp' element={<SignUpForm/>}/>
-
     </Routes>
     
   );
