@@ -23,7 +23,7 @@ describe('SignInForm component', () => {
 
   it('submits the form with email and password', async () => {
     const email = 'test@example.com';
-    const password = 'testpassword';
+    // const password = 'testpassword';
 
     signInAuthUserWithEmailAndPassword.mockResolvedValue({});
 
