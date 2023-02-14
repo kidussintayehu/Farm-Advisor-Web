@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 
 import FormInput from '../form-input/form-input.component';
-import Button from '../Button/button.component';
+import Button from '../button/button.component';
 
 import { act } from 'react-dom/test-utils';
 
