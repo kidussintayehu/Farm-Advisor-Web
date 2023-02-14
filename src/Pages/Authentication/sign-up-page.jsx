@@ -2,7 +2,7 @@ import "./signUpPage.styles.scss";
 import Logo from "../../Assets/icons8-open-source-150.png";
 import { useNavigate, Link } from "react-router-dom";
 
-import Button from '../../Components/button/button.component';
+import Button from '../../Components/Button/button.component';
 
 const SignUpPage = () => {
   const navigate = useNavigate();
