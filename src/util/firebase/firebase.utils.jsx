@@ -1,24 +1,24 @@
 import { initializeApp } from "firebase/app";
 
 import {
-    getAuth,
-    signInWithRedirect,
-    signInWithPopup,
-    GoogleAuthProvider,
-    createUserWithEmailAndPassword,
-    signInWithEmailAndPassword,
-    signOut,
-    onAuthStateChanged
-  } from 'firebase/auth';
-  import { getFirestore, doc, getDoc, setDoc } from 'firebase/firestore';
+  getAuth,
+  signInWithRedirect,
+  signInWithPopup,
+  GoogleAuthProvider,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  signOut,
+  onAuthStateChanged,
+} from "firebase/auth";
+import { getFirestore, doc, getDoc, setDoc } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAquTBJzmG7fM5lfCbITTh-SOF4rgKZre4",
+  apiKey: process.env.REACT_APP_API,
   authDomain: "agino-farm-db.firebaseapp.com",
   projectId: "agino-farm-db",
   storageBucket: "agino-farm-db.appspot.com",
   messagingSenderId: "118221013047",
-  appId: "1:118221013047:web:86b67120b25b715f9fbfb2"
+  appId: "1:118221013047:web:86b67120b25b715f9fbfb2",
 };
 
 // Initialize Firebase
@@ -27,7 +27,7 @@ const app = initializeApp(firebaseConfig);
 const googleProvider = new GoogleAuthProvider();
 
 googleProvider.setCustomParameters({
-  prompt: 'select_account',
+  prompt: "select_account",
 });
 
 export const auth = getAuth();
@@ -44,7 +44,7 @@ export const createUserDocumentFromAuth = async (
 ) => {
   if (!userAuth) return;
 
-  const userDocRef = doc(db, 'users', userAuth.uid);
+  const userDocRef = doc(db, "users", userAuth.uid);
 
   const userSnapshot = await getDoc(userDocRef);
 
@@ -60,7 +60,7 @@ export const createUserDocumentFromAuth = async (
         ...additionalInformation,
       });
     } catch (error) {
-      console.log('error creating the user', error.message);
+      console.log("error creating the user", error.message);
     }
   }
 
@@ -79,6 +79,7 @@ export const signInAuthUserWithEmailAndPassword = async (email, password) => {
   return await signInWithEmailAndPassword(auth, email, password);
 };
 
-export const signOutUser =async () =>await signOut(auth)
+export const signOutUser = async () => await signOut(auth);
 
-export const onAuthStateChangedListener =(callback) => onAuthStateChanged(auth,callback)
+export const onAuthStateChangedListener = (callback) =>
+  onAuthStateChanged(auth, callback);
